@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				/* background: url("image1.jpg") no-repeat fixed; */
+				background-size: cover;
+				background-color: white;
+				font-size: 16;
+				background: scroll;
+			}
+
+			br {
+				margin: 0.2px;
+				padding: 0.2px;
+			}
+			@media screen and (max-width: 1024px) {
+				body {
+					background: url(https://via.placeholder.com/1024x800) no-repeat fixed;
+					background-size: cover;
+				}
+			}
+
+			@media screen and (max-width: 700px) and (orientation: landscape) {
+				body {
+					background: url(https://via.placeholder.com/800x600) no-repeat fixed;
+					background-size: cover;
+				}
+			}
+
+			@media screen and (max-width: 700px) and (orientation: portrait) {
+				body {
+					background: url(https://via.placeholder.com/400x600) no-repeat fixed;
+					background-size: cover;
+				}
+			}
+			.dan1 {
+				background-color: aqua;
+				margin: 10px;
+				display: inline;
+			}
+			.dan2 {
+				position: left;
+				background-color: red;
+				display: inline;
+			}
+			.dan3 {
+				position: left;
+				background-color: yellow;
+				display: inline;
+			}
+			.dan4 {
+				position: left;
+				background-color: palevioletred;
+				display: inline;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>미디어쿼리 기반 - 배경 이미지 바꿔보기</h1>
+	</body>
+
+	<script>
+		for (let i = 1; i <= 4; i++) {
+			console.log(i + "단");
+			document.write(`<h1 class=dan${i}>` + i + "단" + "</h1>");
+			document.write("<br/>");
+
+			for (let j = 1; j <= 9; j++) {
+				console.log(i + "*" + j + "=" + i * j);
+				document.write(`<h2 class=dan${i}>` + i + "*" + j + "=" + i * j + "</h2>");
+				document.write("<br/>");
+				if (j == 9) {
+					document.write("<br/>");
+				}
+			}
+		}
+
+		document.write("<br/>");
+
+		for (let i = 5; i <= 9; i++) {
+			console.log(i + "단");
+			document.write(`<h1 class=dan${i}>` + i + "단" + "</h1>");
+			document.write("<br/>");
+
+			for (let j = 1; j <= 9; j++) {
+				console.log(i + "*" + j + "=" + i * j);
+				document.write(`<h2 class=dan${i}>` + i + "*" + j + "=" + i * j + "</h2>");
+				document.write("<br/>");
+				if (j == 9) {
+					document.write("<br/>");
+				}
+			}
+		}
+	</script>
+</html>

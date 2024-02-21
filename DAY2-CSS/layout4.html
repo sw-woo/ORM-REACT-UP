@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<style>
+			/* 전체 콘텐츠를 가운데 정렬시키고 콘텐츠는 960사이즈로 고정한다. */
+			body {
+				font-size: 16px;
+			}
+
+			#wrapper {
+				width: 98%;
+				font-size: 12;
+				margin: 0 auto;
+			}
+			.top-header {
+				width: 100%;
+				height: 120px;
+				background-color: cadetblue;
+				border-bottom: 1px solid black;
+			}
+
+			.main-banner {
+				width: 100%;
+				height: auto;
+			}
+
+			.main-banner img {
+				max-width: 100%;
+				height: auto;
+			}
+
+			.header-title {
+				font-size: 2rem;
+				color: white;
+				text-align: center;
+				line-height: 120px;
+			}
+
+			.content {
+				float: left;
+				width: 62.5%;
+				height: 400px;
+				padding: 1.5625%;
+				background-color: gray;
+			}
+			.right-area {
+				float: right;
+				width: 31.25%;
+				height: 400px;
+				padding: 1.5625%;
+				background-color: brown;
+			}
+			footer {
+				clear: both;
+				width: 100%;
+				height: 120px;
+				background-color: orange;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<!-- 상단 GNB 메뉴영역 -->
+			<header class="top-header">
+				<h1 class="header-title">고정형 레이아웃진행</h1>
+			</header>
+
+			<section class="main-banner">
+				<img src="http://via.placeholder.com/1920x440" />
+			</section>
+
+			<section class="content">
+				<h3>콘텐츠영역</h3>
+			</section>
+
+			<aside class="right-area">
+				<h3>오른쪽 광고 영역</h3>
+			</aside>
+			<footer><h3>하단 풋터</h3></footer>
+		</div>
+	</body>
+</html>
